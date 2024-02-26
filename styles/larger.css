@@ -1,0 +1,22 @@
+@media screen and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 15px 30px;
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        grid-column: span 1;
+    }
+
+    main section {
+        grid-column: span 1;
+    }
+}
