@@ -29,6 +29,11 @@ header {
     margin: 20px;
 }
 
+span {
+    color: white;
+    font-size: 50px;
+}
+
 h1 {
     color: white;
     font-size: 2rem;
@@ -70,6 +75,14 @@ nav a.active {
     margin-right: auto;
     margin-top: 20px;
     padding-left: 0;
+}
+
+.title-container h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-align: left;
+    margin: 0;
+    font-size: 2rem;
 }
 
 .title-container h2 {
@@ -125,6 +138,6 @@ footer {
     box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 1);
 }
 
-.modified {
+#lastModified {
     color: yellow;
 }

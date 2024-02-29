@@ -5,11 +5,13 @@
         align-items: center;
     }
 
-    .title-container, .card, footer {
-        text-align: center;
+    main {
+        display: flex;
+        flex-direction: column;
     }
 
     .card {
+        width: 100%;
         margin-bottom: 20px;
     }
 }
