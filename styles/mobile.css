@@ -1,31 +1,35 @@
 @media screen and (max-width: 599px) {
-
-    header,
-    footer {
+    header, footer {
         width: 100%;
-        margin: 0;
-        padding: 0 20px;
-        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+
+    header .profile-header, footer {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 10px 20px; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; 
+        padding-left: 0;
+    }
+
+    nav a {
+        text-align: center; 
     }
 
     main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .profile-header,
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        width: 100%;
+        padding: 0 20px; 
     }
 
     .card {
-        width: auto;
-        margin-bottom: 20px;
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 }
