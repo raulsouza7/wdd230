@@ -1,6 +1,7 @@
 @media screen and (min-width: 600px) {
     nav ul {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
     }
 
     nav a {
@@ -8,15 +9,12 @@
     }
 
     main {
-        margin-left: auto;
-        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .card {
-        grid-column: span 1;
-    }
-
-    main section {
-        grid-column: span 1;
+        margin: 5px;
     }
 }
