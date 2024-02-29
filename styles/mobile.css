@@ -1,0 +1,22 @@
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.main {
+    padding: 0 20px;
+}
