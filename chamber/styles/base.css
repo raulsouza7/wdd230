@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #04628d;
+    transform: translateY(-3px);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li:nth-child(n+2) {
+    margin-right: 20px;
+}
+
+.hero {
+    background: url('https://orem.org/wp-content/uploads/2020/04/Welcomce-to-Orem-Banner-2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.join-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    text-align: center;
+    flex: 1;
+    margin-right: auto;
+}
+
+.footer-logo img {
+    width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.footer-logo p {
+    margin: 4px 0;
+}
+
+.footer-contact {
+    text-align: center;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+    display: block;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-contact {
+        text-align: center;
+        margin: 10px 0;
+        flex-basis: 100%;
+    }
+
+    .footer-logo,
+    .footer-contact {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

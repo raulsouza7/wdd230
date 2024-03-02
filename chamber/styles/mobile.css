@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo h1 {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 5px 0; 
+
+    .hero {
+        height: auto; 
+    }
+
+    .hero-content {
+        align-self: center; 
+        margin-top: 20px; 
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo,
+    .footer-contact {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+}

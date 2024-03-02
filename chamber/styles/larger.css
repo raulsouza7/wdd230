@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .logo img {
+        width: 70px; 
+    }
+
+    .logo h1 {
+        font-size: 32px; 
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+}
