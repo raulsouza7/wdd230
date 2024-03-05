@@ -12,40 +12,47 @@
         text-align: center;
     }
 
-    .profile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 2;
-    }
-
-    .profile-header img {
-        width: 80px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .dark-mode-button, .hamburger-menu {
+    .dark-mode-button {
+        position: absolute;
+        left: 10px;
+        top: 10px;
         font-size: 30px;
         color: white;
         background: none;
         border: none;
         cursor: pointer;
-        align-self: center;
-        margin-top: 10px;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px; /* Adjust top margin to avoid overlap with buttons */
     }
 
     #navbar {
         display: none;
-        position: relative;
+        position: absolute;
+        top: 60px;
+        left: 0;
         width: 100%;
         background-color: #123456;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 100;
     }
 
     #navbar.show {
