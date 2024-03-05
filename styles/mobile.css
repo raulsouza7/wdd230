@@ -1,5 +1,4 @@
 @media screen and (max-width: 599px) {
-
     header, footer {
         width: 100%;
         margin: 0;
@@ -13,7 +12,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .profile-header img {
@@ -31,36 +29,36 @@
         margin-bottom: 20px;
     }
 
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
     .menu-buttons {
         display: flex;
-        width: 100%;
         justify-content: space-between;
-        margin-top: 40px; /* Space between header content and buttons */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
     }
 
     .hamburger-menu, .dark-mode-button {
-        font-size: 30px; /* Adjust icon size */
-        color: white;
-        cursor: pointer;
+        display: block;
         background: none;
         border: none;
-        padding: 10px 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
     }
 
-    .hamburger-menu, .dark-mode-button {
-        font-size: 24px;
-        padding: 10px;
-        margin: 0;
+    .dark-mode-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        margin-left: auto;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        left: 20px;
+        top: 20px;
     }
 
     #navbar ul {
@@ -72,7 +70,7 @@
         background-color: #123456;
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 60px;
         z-index: 1;
     }
 
