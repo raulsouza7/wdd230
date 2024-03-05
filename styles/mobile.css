@@ -99,3 +99,39 @@
         height: 100vh;
     }
 }
+
+@media screen and (max-width: 599px) {
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-header img {
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+
+    .menu-buttons {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .dark-mode-button {
+        margin-left: auto; /* Push it to the right */
+    }
+
+    nav {
+        padding-top: 60px; /* Adjust based on the actual height of your header after changes */
+    }
+}
