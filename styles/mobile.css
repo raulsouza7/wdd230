@@ -3,84 +3,61 @@
     main {
         grid-template-columns: 1fr;
     }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        position: relative;
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+    
+        .profile-header {
+            display: flex;
+            align-items: center;
+        }
+    
+        .profile-pic {
+            width: 50px;
+            margin-right: 10px;
+        }
+    
+        span {
+            font-size: 1.2rem;
+        }
+    
+        .dark-mode-button {
+            position: static;
+            margin-left: auto;
+        }
+    
+        .hamburger-menu {
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    
+        nav ul {
+            display: none;
+        }
+    
+        nav.show ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav.show a {
+            padding: 10px;
+        }
+    
+        .title-container {
+            align-items: center;
+            text-align: center;
+        }
+    
+        main {
+            grid-template-columns: 1fr;
+        }
     }
-
-    .profile-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-pic {
-        width: 50px;
-        height: 50px;
-        border-radius: 0;
-        margin-right: 10px;
-    }
-
-    .menu-buttons {
-        display: flex;
-        align-items: center;
-    }
-
-    #hamburger-menu {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-
-    #dark-mode-toggle {
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
-
-    nav {
-        display: none;
-        position: absolute;
-        top: calc(100% + 10px);
-        left: 0;
-        width: 100%;
-        background-color: #000;
-    }
-
-    nav.show {
-        display: block;
-    }
-
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 15px 20px;
-        display: block;
-        transition: background-color 0.3s;
-    }
-
-    nav a:hover,
-    nav a.active {
-        background-color: #813800;
-    }
-
-    .title-container {
-        margin-top: 60px;
-    }
-}
