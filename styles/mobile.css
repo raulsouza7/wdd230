@@ -25,6 +25,7 @@ header {
     color: white;
     cursor: pointer;
     z-index: 1;
+    margin-right: 20px;
 }
 
 .hamburger-menu {
