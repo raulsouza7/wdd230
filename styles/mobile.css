@@ -1,29 +1,157 @@
 @media screen and (max-width: 599px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 
-    .profile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123456;
+    padding: 10px 20px;
+}
 
-    .menu-buttons {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        padding: 0 10px;
-    }
+.profile-header {
+    display: flex;
+    align-items: center;
+}
 
-    .hamburger-menu, .dark-mode-button {
-        font-size: 24px;
-        padding: 10px;
-        margin: 0;
-    }
+.menu-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #123456;
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #444;
+}
+
+.title-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.title-container h1 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.title-underline {
+    height: 2px;
+    background-color: #123456;
+    width: 100%;
+    margin-top: 5px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.card {
+    margin: 0 20px 20px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #123456;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.card.information p {
+    text-align: center;
+}
+
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333333;
+}
+
+body.dark-mode nav a {
+    color: white;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #555555;
+}
+
+body.dark-mode .title-container h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .title-underline {
+    background-color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card a {
+    color: #9a9a9a;
+}
+
+body.dark-mode .card a:hover {
+    color: #ffffff;
+}
 }
