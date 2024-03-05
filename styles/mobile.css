@@ -39,7 +39,6 @@
     #dark-mode-toggle {
         position: absolute;
         top: 15px;
-        right: 10px;
         z-index: 9999;
     }
 
@@ -52,7 +51,6 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        width: 100%;
         padding: 0 10px;
         z-index: 9999;
     }
@@ -63,15 +61,6 @@
         color: white;
         font-size: 1rem;
         cursor: pointer;
-    }
-
-    .hamburger-menu, .dark-mode-button {
-        font-size: 24px;
-        padding: 10px;
-        margin: 0;
-
-    .menu-buttons button:hover {
-        background-color: rgba(255, 255, 255, 0.1);
     }
 
     nav ul {
@@ -98,5 +87,4 @@
         padding: 10px 20px;
         display: block;
     }
-}
 }
