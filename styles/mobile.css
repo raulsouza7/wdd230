@@ -1,15 +1,24 @@
 @media screen and (max-width: 599px) {
     header {
-        width: 100%;
-        padding: 20px 0;
-        box-sizing: border-box;
-        position: relative;
-        text-align: center;
-        background-color: #123456;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: #123456;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
     }
 
     .profile-header img {
@@ -19,28 +28,37 @@
         margin-bottom: 10px;
     }
 
-
-    .menu-buttons, .hamburger-menu, .dark-mode-button {
-        order: 3;
+    .hamburger-menu {
+        position: absolute;
+        left: 10px;
+        top: 10px;
         font-size: 30px;
         color: white;
-        cursor: pointer;
         background: none;
         border: none;
-        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .dark-mode-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     #navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
+        display: none;
+        position: static;
         width: 100%;
         background-color: #123456;
-        display: none;
         flex-direction: column;
         align-items: center;
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        z-index: 999;
+        margin-top: 20px;
     }
 
     #navbar.show {
@@ -49,18 +67,18 @@
 
     #navbar ul {
         width: 100%;
+        list-style-type: none;
         padding: 0;
         margin: 0;
-        list-style-type: none;
     }
 
     #navbar ul li a {
         display: block;
-        color: white;
-        padding: 15px 20px;
-        text-decoration: none;
         width: 100%;
-        text-align: left;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
