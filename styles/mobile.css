@@ -4,103 +4,6 @@
         grid-template-columns: 1fr;
     }
 
-    /* Position hamburger menu button */
-    #hamburger-menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-    }
-
-    #hamburger-menu::before {
-        content: "☰";
-    }
-    
-    #hamburger-menu.open::before {
-        content: "❎";
-    }
-
-    /* Hide original navigation */
-    #navbar {
-        display: none;
-    }
-
-    /* Style for the expanded hamburger menu */
-    #navbar.show {
-        display: block;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #000;
-        width: 100%;
-        text-align: center;
-    }
-
-    #navbar.show ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    #navbar.show ul li {
-        margin-bottom: 20px;
-    }
-
-    #navbar.show ul li a {
-        color: #fff;
-        font-size: 1.5rem;
-        text-decoration: none;
-    }
-
-    /* Position dark mode toggle button */
-    #dark-mode-toggle {
-        position: absolute;
-        top: 20px;
-        right: 20px; /* Position on the right side of the header */
-        z-index: 9999;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        background-color: #333;
-        color: #fff;
-    }
-    
-    .navigation a {
-        display: none;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-    }
-    .navigation a:hover {
-        background-color: #bbb;
-        color: #333;
-        font-weight: 700;
-    }
-    
-    .open a {
-        display: block;
-    }
-    
-    .active::before { 
-        content: "📍";
-    }
-    
-    .stuff {
-        margin: 0.5m;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #bed;
-        max-width: 580px;
-        height: 100vh;
-    }
-}
-
-@media screen and (max-width: 599px) {
     .profile-header {
         display: flex;
         flex-direction: column;
@@ -110,7 +13,7 @@
     }
 
     .profile-header img {
-        margin-bottom: 10px; /* Adjust as needed */
+        margin-bottom: 10px;
     }
 
     .menu-buttons {
@@ -128,10 +31,10 @@
     }
 
     .dark-mode-button {
-        margin-left: auto; /* Push it to the right */
+        margin-left: auto;
     }
 
     nav {
-        padding-top: 60px; /* Adjust based on the actual height of your header after changes */
+        padding-top: 60px;
     }
 }
