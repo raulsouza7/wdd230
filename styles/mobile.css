@@ -1,11 +1,15 @@
 @media screen and (max-width: 599px) {
     header {
         width: 100%;
-        padding: 10px 0;
+        padding: 20px 0; /* Adjust padding for spacing */
         box-sizing: border-box;
         position: relative;
         text-align: center;
         background-color: #123456;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .profile-header {
@@ -20,53 +24,36 @@
     .profile-header img {
         width: 80px;
         height: auto;
-        margin-bottom: 10px;
+        border-radius: 50%;
+        margin-bottom: 10px; 
     }
 
     .menu-buttons {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        justify-content: center;
         width: 100%;
-        padding: 0 20px;
+        padding: 10px 0;
     }
 
-    .hamburger-menu,
-    .dark-mode-button {
+    .hamburger-menu, .dark-mode-button {
         font-size: 30px;
         color: white;
         cursor: pointer;
         background: none;
         border: none;
-    }
-
-    .dark-mode-button {
-        position: static;
-        padding: 10px;
-        margin: 0 10px;
-    }
-
-    .hamburger-menu {
-        position: static;
-        padding: 10px;
-        margin: 0 10px;
-    }
+        margin: 10px 0;
 
     #navbar {
-        position: absolute;
-        top: 100%;
-         left: 0;
+        position: static;
         width: 100%;
         background-color: #123456;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease;
+        padding-top: 20px;
     }
 
     #navbar ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -75,7 +62,7 @@
     }
 
     #navbar ul.show {
-        transform: translateY(0);
+        display: flex;
     }
 
     #navbar ul li a {
@@ -84,4 +71,5 @@
         padding: 10px;
         text-decoration: none;
     }
+}
 }
