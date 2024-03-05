@@ -1,91 +1,58 @@
 @media screen and (max-width: 599px) {
-    header, footer {
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
 
-    .profile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    
+#hamburger-menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
 
-    .profile-header img {
-        margin-bottom: 10px;
-    }
+#hamburger-menu.open::before {
+    content: "❎";
+}
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+#navbar {
+    display: none;
+}
 
-    .card {
-        width: auto;
-        margin-bottom: 20px;
-    }
+#navbar.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9998;
+}
 
-    .menu-buttons {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-    }
+#navbar.open ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .hamburger-menu, .dark-mode-button {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-    }
+#navbar.open ul li {
+    margin-bottom: 20px;
+}
 
-    .dark-mode-button {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        margin-left: auto;
-    }
+#navbar.open ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
 
-    .hamburger-menu {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    }
-
-    #navbar ul {
-        display: none;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-        background-color: #123456;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        z-index: 1;
-    }
-
-    #navbar ul.show {
-        display: block;
-    }
-
-    #navbar ul li {
-        text-align: center;
-    }
-
-    #navbar ul li a {
-        display: block;
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-    }
+.dark-mode-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
 }
