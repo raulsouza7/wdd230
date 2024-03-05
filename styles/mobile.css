@@ -1,4 +1,12 @@
 @media screen and (max-width: 599px) {
+    
+    header, footer {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
     .profile-header {
         display: flex;
         flex-direction: column;
@@ -8,7 +16,18 @@
     }
 
     .profile-header img {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 20px;
     }
 
     .menu-buttons {
@@ -21,15 +40,53 @@
         padding: 10px;
     }
 
-    .hamburger-menu {
+    .hamburger-menu, .dark-mode-button {
         display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
     }
 
     .dark-mode-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
         margin-left: auto;
     }
 
-    nav {
-        padding-top: 60px;
+    .hamburger-menu {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #navbar ul {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: #123456;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        z-index: 1;
+    }
+
+    #navbar ul.show {
+        display: block;
+    }
+
+    #navbar ul li {
+        text-align: center;
+    }
+
+    #navbar ul li a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
     }
 }
