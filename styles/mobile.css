@@ -1,7 +1,10 @@
 @media screen and (max-width: 599px) {
-
     main {
         grid-template-columns: 1fr;
+    }
+
+    header {
+        position: relative;
     }
 
     .profile-header {
@@ -10,7 +13,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        position: relative;
+        position: relative; 
     }
 
     .profile-header img {
@@ -29,9 +32,11 @@
         cursor: pointer;
     }
 
-    .dark-mode-button {
-        margin-top: 10px;
-        margin-left: auto;
+    #dark-mode-toggle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
     }
 
     nav {
