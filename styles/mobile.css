@@ -1,7 +1,5 @@
 @media screen and (max-width: 599px) {
-
-    header,
-    footer {
+    header, footer {
         width: 100%;
         margin: 0;
         padding: 0 20px;
@@ -13,25 +11,12 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
 
-    .profile-header,
-    nav ul {
+    .profile-header, nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul {
-        width: 100%;
-    }
-
-    .card {
-        width: auto;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 599px) {
     .hamburger-menu {
         display: block;
         position: absolute;
@@ -45,13 +30,15 @@
     }
 
     #navbar ul {
-        display: none;
+        display: none; 
         width: 100%;
         padding: 0;
         margin: 0;
         list-style-type: none;
         position: absolute;
         background-color: #123456;
+        top: 60px;
+        left: 0;
         z-index: 1;
     }
 
@@ -61,7 +48,6 @@
 
     #navbar ul li {
         text-align: center;
-        width: 100%;
     }
 
     #navbar ul li a {
@@ -70,29 +56,9 @@
         padding: 10px;
         text-decoration: none;
     }
-}
 
-#navbar ul {
-    display: none;
-    width: 100%;
-    position: absolute;
-    background-color: #123456;
-    top: 60px; 
-    left: 0;
-    z-index: 1;
-}
-
-#navbar ul.show {
-    display: block;
-}
-
-#navbar ul li {
-    text-align: center;
-}
-
-#navbar ul li a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+    .card {
+        width: auto;
+        margin-bottom: 20px;
+    }
 }
