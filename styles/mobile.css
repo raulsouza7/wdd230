@@ -20,16 +20,18 @@
         background: none;
         border: none;
         z-index: 3;
+        padding: 0;
     }
 
-    .dark-mode-text {
+    .dark-mode-button span {
+        cursor: pointer;
+        display: inline-block;
         font-size: 24px;
         color: white;
-        cursor: pointer;
     }
 
     .profile-header {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .profile-header img {
@@ -69,12 +71,15 @@
     }
 
     #navbar ul {
+        width: 100%;
+        list-style-type: none;
         padding: 0;
         margin: 0;
-        list-style-type: none;
     }
 
     #navbar ul li a {
+        display: block;
+        width: 100%;
         padding: 15px 20px;
         color: white;
         text-decoration: none;
