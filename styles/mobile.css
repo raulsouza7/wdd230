@@ -1,161 +1,89 @@
 @media screen and (max-width: 599px) {
-
     header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #123456;
+        padding: 10px;
         position: relative;
+        width: 100%;
+        height: auto;
     }
 
     .profile-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .profile-pic {
-        width: 60px;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    .menu-buttons {
-        display: flex;
-        align-items: center;
-    }
-
-    .dark-mode-button {
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
         position: absolute;
-        top: 20px;
-        right: 60px;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .hamburger-menu {
+    .profile-header img,
+    .profile-header span {
+        z-index: 1;
+    }
+
+    .hamburger-menu,
+    .dark-mode-button {
         font-size: 24px;
         color: white;
         background: none;
         border: none;
         cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        z-index: 2;
     }
 
-    nav {
+    .dark-mode-button {
         position: absolute;
-        top: 100%;
+        left: 10px;
+        top: 10px;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    #navbar {
+        display: none;
+        position: absolute;
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: #123456;
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
 
-    nav.show {
-        display: block;
-    }
-
-    .navigation {
-        list-style: none;
+    #navbar.show {
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
-    .navigation a {
+    #navbar ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    #navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
         color: white;
         text-decoration: none;
-        padding: 10px 20px;
-        transition: background-color 0.3s;
-    }
-
-    .navigation a:hover {
-        background-color: #444;
-    }
-
-    .title-container {
-        margin-top: 20px;
-        padding: 0 20px;
-    }
-
-    .title-container h1 {
-        font-size: 1.5rem;
-        text-align: left;
-    }
-
-    .title-underline {
-        height: 2px;
-        background-color: #123456;
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    main {
-        margin-top: 20px;
-    }
-
-    .card {
-        margin: 0 20px 20px 20px;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-
-    .card h2 {
-        font-size: 1.2rem;
-        padding: 10px 20px;
-        margin: 0;
-        background-color: #123456;
-        color: white;
-        border-radius: 5px 5px 0 0;
-    }
-
-    .card.information p {
         text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    footer {
-        background-color: #123456;
-        color: white;
-        text-align: center;
-        padding: 10px 20px;
-        font-size: 0.9rem;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    body.dark-mode header,
-    body.dark-mode footer {
-        background-color: #333333;
-    }
-
-    body.dark-mode nav a {
-        color: white;
-    }
-
-    body.dark-mode nav a:hover {
-        background-color: #555555;
-    }
-
-    body.dark-mode .title-container h1 {
-        color: #ffffff;
-    }
-
-    body.dark-mode .title-underline {
-        background-color: #ffffff;
-    }
-
-    body.dark-mode .card {
-        background-color: #1e1e1e;
-        color: #ffffff;
-    }
-
-    body.dark-mode .card a {
-        color: #9a9a9a;
-    }
-
-    body.dark-mode .card a:hover {
-        color: #ffffff;
+    #navbar ul li:last-child a {
+        border-bottom: none;
     }
 }
