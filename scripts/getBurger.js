@@ -1,14 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger-menu');
-    const navUL = document.getElementById('navbar').querySelector('ul');
+    const navbar = document.getElementById('navbar');
 
-    hamburger.addEventListener('click', function() {
-        navUL.classList.toggle('show');
-
-         if (navUL.classList.contains('show')) {
-            this.innerHTML = '&times;';
-        } else {
-            this.innerHTML = '&#9776;';
-        }
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('show');
     });
 });
