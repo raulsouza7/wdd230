@@ -1,5 +1,10 @@
 @media screen and (max-width: 599px) {
-    /* Hide the hamburger menu button by default */
+    /* Adjust card layout for mobile view */
+    main {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    /* Position hamburger menu button */
     #hamburger-menu {
         display: block;
         font-size: 1.5rem;
@@ -8,19 +13,20 @@
         color: #fff;
         position: absolute;
         top: 20px;
-        right: 20px;
+        left: 20px; /* Position on the left side of the header */
         z-index: 9999;
     }
 
-    /* Navigation Links */
+    /* Hide original navigation */
     #navbar {
-        display: none; /* Hide the original navigation */
+        display: none;
     }
 
+    /* Style for the expanded hamburger menu */
     #navbar.show {
         display: block;
         position: absolute;
-        top: 70px; /* Adjust this value as needed */
+        top: 70px;
         right: 0;
         background-color: #000;
         width: 100%;
@@ -42,11 +48,11 @@
         text-decoration: none;
     }
 
-    /* Dark Mode Toggle */
+    /* Position dark mode toggle button */
     #dark-mode-toggle {
         position: absolute;
         top: 20px;
-        right: 80px; /* Adjust this value as needed */
+        right: 20px; /* Position on the right side of the header */
         z-index: 9999;
     }
 }
