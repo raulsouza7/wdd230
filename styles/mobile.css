@@ -1,20 +1,26 @@
 @media screen and (max-width: 599px) {
-    /* Adjust card layout for mobile view */
+
     main {
-        grid-template-columns: 1fr; /* Stack cards in a single column */
+        grid-template-columns: 1fr;
     }
 
     /* Position hamburger menu button */
     #hamburger-menu {
-        display: block;
-        font-size: 1.5rem;
-        border: 0;
-        background: none;
-        color: #fff;
-        position: absolute;
-        top: 20px;
-        left: 20px; /* Position on the left side of the header */
-        z-index: 9999;
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    }
+
+    #hamburger-menu::before {
+        content: "☰";
+    }
+    
+    #hamburger-menu.open::before {
+        content: "❎";
     }
 
     /* Hide original navigation */
@@ -54,5 +60,42 @@
         top: 20px;
         right: 20px; /* Position on the right side of the header */
         z-index: 9999;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+    
+    .open a {
+        display: block;
+    }
+    
+    .active::before { 
+        content: "📍";
+    }
+    
+    .stuff {
+        margin: 0.5m;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #bed;
+        max-width: 580px;
+        height: 100vh;
     }
 }
