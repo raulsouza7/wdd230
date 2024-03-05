@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger-menu');
-    const navUL = document.getElementById('navbar').querySelector('ul');
+    const navUL = document.querySelector('.navigation ul');
 
     hamburger.addEventListener('click', function() {
         navUL.classList.toggle('show');

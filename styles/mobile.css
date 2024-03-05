@@ -1,22 +1,4 @@
 @media screen and (max-width: 599px) {
-    header, footer {
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .profile-header, nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .hamburger-menu {
         display: block;
         position: absolute;
@@ -29,36 +11,31 @@
         cursor: pointer;
     }
 
-    #navbar ul {
-        display: none; 
+    .navigation ul {
+        display: none;
         width: 100%;
         padding: 0;
         margin: 0;
         list-style-type: none;
-        position: absolute;
         background-color: #123456;
+        position: absolute;
         top: 60px;
         left: 0;
-        z-index: 1;
+        z-index: 1000;
     }
 
-    #navbar ul.show {
+    .navigation ul.show {
         display: block;
     }
 
-    #navbar ul li {
+    .navigation ul li {
         text-align: center;
     }
 
-    #navbar ul li a {
+    .navigation ul li a {
         display: block;
         color: white;
         padding: 10px;
         text-decoration: none;
-    }
-
-    .card {
-        width: auto;
-        margin-bottom: 20px;
     }
 }
