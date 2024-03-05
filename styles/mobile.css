@@ -24,6 +24,7 @@ header {
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 1;
 }
 
 .hamburger-menu {
@@ -45,6 +46,7 @@ nav {
     width: 100%;
     background-color: #123456;
     display: none;
+    z-index: 1;
 }
 
 nav.show {
