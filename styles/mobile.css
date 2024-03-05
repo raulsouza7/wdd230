@@ -56,89 +56,49 @@ nav {
 	margin: 1rem auto;
 }
 
-/* small view navigation */
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+/* Hide the hamburger menu in non-mobile views */
+.hamburger-menu {
+    display: none;
 }
 
-#menu::before {
-	content: "☰";
-}
+@media screen and (max-width: 599px) {
+    /* Show the hamburger menu in mobile views */
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
 
-#menu.open::before {
-	content: "❎";
-}
+    /* Initially hide the navigation menu in mobile views */
+    #navbar ul {
+        display: none;
+        width: 100%;
+        background-color: #123456; /* Adjust based on your color scheme */
+        position: absolute;
+        left: 0;
+        top: 60px; /* Adjust based on the height of your header */
+        z-index: 1;
+    }
 
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
+    /* Style for when navigation is shown */
+    #navbar ul.show {
+        display: block;
+    }
 
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
+    #navbar ul li {
+        text-align: center;
+    }
 
-.open a {
-	display: block;
-}
-
-.active::before { 
-	content: "📍";
-}
-
-.stuff {
-	margin: 0.5m;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	#menu {
-		display: none;
-	}
-
-	.navigation {
-		flex-direction: row;
-	}
-
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
-
-	.stuff {
-		margin: 1rem auto;
-	}
+    #navbar ul li a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
 }
