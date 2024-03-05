@@ -1,32 +1,52 @@
 @media screen and (max-width: 599px) {
+    /* Hide the hamburger menu button by default */
+    #hamburger-menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
 
-    header,
-    footer {
+    /* Navigation Links */
+    #navbar {
+        display: none; /* Hide the original navigation */
+    }
+
+    #navbar.show {
+        display: block;
+        position: absolute;
+        top: 70px; /* Adjust this value as needed */
+        right: 0;
+        background-color: #000;
         width: 100%;
-        margin: 0;
-        padding: 0 20px;
-        box-sizing: border-box;
+        text-align: center;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-
-    .profile-header,
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    #navbar.show ul {
+        list-style: none;
+        padding: 0;
     }
 
-    nav ul {
-        width: 100%;
-    }
-
-    .card {
-        width: auto;
+    #navbar.show ul li {
         margin-bottom: 20px;
+    }
+
+    #navbar.show ul li a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    /* Dark Mode Toggle */
+    #dark-mode-toggle {
+        position: absolute;
+        top: 20px;
+        right: 80px; /* Adjust this value as needed */
+        z-index: 9999;
     }
 }
