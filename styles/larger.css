@@ -11,6 +11,38 @@
         border-radius: 6px;
         box-shadow: 0 0 30px rgb(83, 75, 75);
     }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 0;
+        background-color: #000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+        background-color: #813800;
+    }
 }
 
 span {
@@ -24,4 +56,12 @@ span {
     text-align: left;
     margin: 0;
     font-size: 2rem;
+}
+
+header {
+    background-color: #123456;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
