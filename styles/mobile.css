@@ -6,27 +6,55 @@
         box-sizing: border-box;
     }
 
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .profile-header, nav ul {
-        flex-direction: column;
-        align-items: center;
+    .card {
+        width: auto;
+        margin-bottom: 20px;
     }
 
-    .hamburger-menu {
-        display: block;
+    .menu-buttons {
+        display: flex;
+        justify-content: space-between;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hamburger-menu, .dark-mode-button {
+        display: block;
         background: none;
         border: none;
         font-size: 30px;
         color: white;
         cursor: pointer;
+    }
+
+    .dark-mode-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        margin-left: auto;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        left: 20px;
+        top: 20px;
     }
 
     #navbar ul {
@@ -35,10 +63,10 @@
         padding: 0;
         margin: 0;
         list-style-type: none;
-        position: absolute;
         background-color: #123456;
-        top: 60px;
+        position: absolute;
         left: 0;
+        top: 60px;
         z-index: 1;
     }
 
@@ -55,10 +83,5 @@
         color: white;
         padding: 10px;
         text-decoration: none;
-    }
-
-    .card {
-        width: auto;
-        margin-bottom: 20px;
     }
 }
