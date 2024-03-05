@@ -1,81 +1,41 @@
 @media screen and (max-width: 599px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #123456;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .profile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-
-    .menu-buttons {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .dark-mode-button {
-        font-size: 24px;
-        color: white;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
     .hamburger-menu {
-        font-size: 24px;
-        color: white;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
         background: none;
         border: none;
+        font-size: 30px;
+        color: white;
         cursor: pointer;
-        order: -1;
-    }
-
-    #navbar {
-        display: none;
-        width: 100%;
-        background-color: #123456;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-    }
-
-    #navbar.show {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     #navbar ul {
+        display: none;
         width: 100%;
         padding: 0;
         margin: 0;
         list-style-type: none;
+        background-color: #123456;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    #navbar ul.show {
+        display: block;
+    }
+
+    #navbar ul li {
+        text-align: center;
+        padding: 12px 0;
     }
 
     #navbar ul li a {
-        display: block;
-        width: 100%;
-        padding: 15px 20px;
         color: white;
+        padding: 15px 20px;
         text-decoration: none;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #navbar ul li:last-child a {
-        border-bottom: none;
+        display: block;
     }
 }
