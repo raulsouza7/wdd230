@@ -1,9 +1,11 @@
 @media screen and (max-width: 599px) {
-    header, footer {
+    header {
         width: 100%;
-        margin: 0;
-        padding: 0 20px;
+        padding: 10px 0;
         box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        background-color: #123456;
     }
 
     .profile-header {
@@ -11,70 +13,69 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
     }
 
     .profile-header img {
+        width: 80px;
+        height: auto;
         margin-bottom: 10px;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card {
-        width: auto;
-        margin-bottom: 20px;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 
     .menu-buttons {
         display: flex;
-        width: 100%;
         justify-content: space-between;
-        margin-top: 20px;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .hamburger-menu, .dark-mode-button {
+    .hamburger-menu,
+    .dark-mode-button {
         font-size: 30px;
         color: white;
         cursor: pointer;
         background: none;
         border: none;
-        padding: 10px 20px;
+    }
+
+    .dark-mode-button {
+        position: static;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .hamburger-menu {
+        position: static;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 100%;
+         left: 0;
+        width: 100%;
+        background-color: #123456;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
     }
 
     #navbar ul {
-        display: none;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
         margin: 0;
         list-style-type: none;
-        background-color: #123456;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        z-index: 1;
     }
 
     #navbar ul.show {
-        display: block;
-    }
-
-    #navbar ul li {
-        text-align: center;
+        transform: translateY(0);
     }
 
     #navbar ul li a {
