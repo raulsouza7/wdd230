@@ -24,35 +24,22 @@
     .profile-header img {
         width: 80px;
         height: auto;
-        border-radius: 50%;
         margin-bottom: 10px;
     }
 
-    .hamburger-menu {
-        position: absolute;
-        left: 10px;
-        top: 10px;
+    .dark-mode-button, .hamburger-menu {
         font-size: 30px;
         color: white;
         background: none;
         border: none;
         cursor: pointer;
-    }
-
-    .dark-mode-button {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        font-size: 30px;
-        color: white;
-        background: none;
-        border: none;
-        cursor: pointer;
+        align-self: center;
+        margin-top: 10px;
     }
 
     #navbar {
         display: none;
-        position: static;
+        position: relative;
         width: 100%;
         background-color: #123456;
         flex-direction: column;
