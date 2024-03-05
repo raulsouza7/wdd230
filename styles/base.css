@@ -197,12 +197,3 @@ body.dark-mode .card a:hover {
     font-size: 18px;
     margin-right: 5px; 
 }
-
-.dark-mode-button {
-    background: none;
-    border: none;
-    color: inherit;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
