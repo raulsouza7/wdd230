@@ -1,14 +1,13 @@
 @media screen and (max-width: 599px) {
     header {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
         background-color: #123456;
-        padding: 10px;
-        position: relative;
+        padding: 20px;
         width: 100%;
         box-sizing: border-box;
+        position: relative;
     }
 
     .profile-header {
@@ -16,36 +15,21 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-grow: 1;
+        margin-bottom: 15px;
     }
 
-    .profile-header img {
-        width: 50px;
-        height: auto;
-        border-radius: 0;
-        margin-bottom: 5px;
+    .menu-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
-    .dark-mode-button {
-        order: -1;
-        background: none;
-        border: none;
-        padding: 0;
-    }
-
-    .dark-mode-button span {
-        cursor: pointer;
-        font-size: 24px;
-        color: white;
-    }
-
-    .hamburger-menu {
+    .dark-mode-button, .hamburger-menu {
         font-size: 24px;
         color: white;
         background: none;
         border: none;
         cursor: pointer;
-        z-index: 3;
     }
 
     #navbar {
@@ -53,23 +37,23 @@
         width: 100%;
         background-color: #123456;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
-        flex-direction: column;
-        align-items: center;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        z-index: 2;
+        z-index: 10;
     }
 
     #navbar.show {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #navbar ul {
         width: 100%;
-        list-style-type: none;
         padding: 0;
         margin: 0;
+        list-style-type: none;
     }
 
     #navbar ul li a {
