@@ -1,63 +1,64 @@
 @media screen and (max-width: 599px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    .dark-mode-button {
+        position: static;
+        margin-left: auto;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav.show ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.show a {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .title-container {
+        align-items: center;
+        text-align: center;
+    }
 
     main {
         grid-template-columns: 1fr;
     }
-        header {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-    
-        .profile-header {
-            display: flex;
-            align-items: center;
-        }
-    
-        .profile-pic {
-            width: 50px;
-            margin-right: 10px;
-        }
-    
-        span {
-            font-size: 1.2rem;
-        }
-    
-        .dark-mode-button {
-            position: static;
-            margin-left: auto;
-        }
-    
-        .hamburger-menu {
-            display: block;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-    
-        nav ul {
-            display: none;
-        }
-    
-        nav.show ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        nav.show a {
-            padding: 10px;
-        }
-    
-        .title-container {
-            align-items: center;
-            text-align: center;
-        }
-    
-        main {
-            grid-template-columns: 1fr;
-        }
-    }
+}
