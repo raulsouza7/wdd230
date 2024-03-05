@@ -17,7 +17,7 @@
     }
 
     span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .dark-mode-button {
@@ -45,12 +45,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        z-index: 1;
+    }
+
+    nav.show li {
+        width: 100%;
+        text-align: center;
     }
 
     nav.show a {
         padding: 10px;
         text-decoration: none;
         color: white;
+        display: block;
     }
 
     .title-container {
