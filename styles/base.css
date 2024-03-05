@@ -4,6 +4,7 @@ html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
@@ -205,4 +206,8 @@ body.dark-mode .card a:hover {
     position: absolute; 
     top: 20px;
     right: 20px; 
+}
+
+.small-icon {
+    width: 20px;
 }
