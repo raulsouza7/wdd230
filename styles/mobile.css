@@ -1,7 +1,7 @@
 @media screen and (max-width: 599px) {
     header {
         width: 100%;
-        padding: 20px 0; /* Adjust padding for spacing */
+        padding: 20px 0;
         box-sizing: border-box;
         position: relative;
         text-align: center;
@@ -12,64 +12,59 @@
         justify-content: center;
     }
 
-    .profile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 2;
-    }
-
     .profile-header img {
         width: 80px;
         height: auto;
         border-radius: 50%;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
-    .menu-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 10px 0;
-    }
 
-    .hamburger-menu, .dark-mode-button {
+    .menu-buttons, .hamburger-menu, .dark-mode-button {
+        order: 3;
         font-size: 30px;
         color: white;
         cursor: pointer;
         background: none;
         border: none;
-        margin: 10px 0;
-
-    #navbar {
-        position: static;
-        width: 100%;
-        background-color: #123456;
-        padding-top: 20px;
+        padding: 10px 0;
     }
 
-    #navbar ul {
+    #navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #123456;
         display: none;
         flex-direction: column;
         align-items: center;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
+
+    #navbar.show {
+        display: flex;
+    }
+
+    #navbar ul {
+        width: 100%;
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
 
-    #navbar ul.show {
-        display: flex;
-    }
-
     #navbar ul li a {
         display: block;
         color: white;
-        padding: 10px;
+        padding: 15px 20px;
         text-decoration: none;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-}
+
+    #navbar ul li:last-child a {
+        border-bottom: none;
+    }
 }
