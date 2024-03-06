@@ -4,20 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
-        hamburger.textContent = navLinks.classList.contains('nav-active') ? '✖' : '☰';
+        hamburger.classList.toggle('open');
     });
 
     navLinks.addEventListener('click', (event) => {
         if (event.target.tagName === 'A') {
             navLinks.classList.remove('nav-active');
-            hamburger.textContent = '☰';
-        }
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-            navLinks.classList.remove('nav-active');
-            hamburger.textContent = '☰';
+            hamburger.classList.remove('open');
         }
     });
 });
