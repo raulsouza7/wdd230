@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -11,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     padding: 20px 0;
     display: flex;
@@ -32,6 +33,7 @@ header {
 
 .logo h1 {
     margin: 0;
+    color: #ffffff;
 }
 
 .social-icons {
@@ -63,12 +65,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #04628d;
+    color: #1E90FF;
     transform: translateY(-3px);
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -111,11 +113,12 @@ nav ul li:nth-child(n+2) {
 }
 
 .card {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, transform 0.3s;
+    color: #333333;
 }
 
 .card:hover {
@@ -124,8 +127,8 @@ nav ul li:nth-child(n+2) {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
@@ -193,27 +196,27 @@ footer {
 }
 
 .hero {
-    position: relative; 
+    position: relative;
     height: 300px;
 }
 
 .cta-button {
-    display: inline-block; 
-    background-color: #007bff; 
+    display: inline-block;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover,
 .cta-button:focus {
-    background-color: #0056b3; 
+    background-color: #0056b3;
     color: #fff;
     text-decoration: none;
 }
