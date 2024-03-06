@@ -4,11 +4,11 @@
     }
 
     .logo img {
-        width: 70px; 
+        width: 70px;
     }
 
     .logo h1 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     main {
@@ -17,5 +17,9 @@
 
     footer {
         padding: 40px 0;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
     }
 }
