@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('nav-active');
     });
 
-    document.addEventListener('click', (e) => {
-        if (!hamburger.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('nav-active')) {
+    document.addEventListener('click', (event) => {
+        if (!hamburger.contains(event.target) && navLinks.classList.contains('nav-active')) {
             navLinks.classList.remove('nav-active');
         }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav-active');
+        });
     });
 });
