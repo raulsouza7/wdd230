@@ -2,30 +2,49 @@
     header {
         flex-direction: column;
         align-items: center;
+        padding: 20px; 
+        position: relative; 
     }
 
     .logo h1 {
         text-align: center;
-    }
-
-    .social-icons {
-        justify-content: center;
-        margin-top: 10px;
+        margin-top: 10px; 
     }
 
     .hamburger {
         display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px; 
+        z-index: 15; 
     }
 
     .nav-links {
         position: fixed;
+        background: #333;
         top: 0;
-        left: 0;
-        z-index: 10;
+        bottom: 0;
+        right: 0;
+        width: 0; 
+        overflow: hidden;
+        transition: width 0.3s ease;
+        z-index: 10; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .nav-links.nav-active {
-        display: flex;
+    .nav-links li a {
+        display: block; 
+        text-decoration: none;
+        padding: 10px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .nav-active {
+        width: 250px; 
+        display: flex; 
     }
 
     .hero {
@@ -33,16 +52,19 @@
     }
 
     .cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .footer-container {
         flex-direction: column;
+        align-items: center;
     }
 
-    .footer-logo, .footer-contact {
+    .footer-logo, 
+    .footer-contact {
         text-align: center;
         margin: 10px 0;
+        flex-basis: 100%; 
     }
-}
 
+}

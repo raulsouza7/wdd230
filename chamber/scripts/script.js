@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
-        hamburger.classList.toggle('open');
+        hamburger.textContent = navLinks.classList.contains('nav-active') ? '✖' : '☰';
     });
 
-    document.addEventListener('click', (event) => {
-        if (!hamburger.contains(event.target) && navLinks.classList.contains('nav-active')) {
+    navLinks.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
             navLinks.classList.remove('nav-active');
-            hamburger.classList.remove('open');
+            hamburger.textContent = '☰';
         }
     });
 
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+    document.addEventListener('click', (event) => {
+        if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
             navLinks.classList.remove('nav-active');
-            hamburger.classList.remove('open');
-        });
+            hamburger.textContent = '☰';
+        }
     });
 });
