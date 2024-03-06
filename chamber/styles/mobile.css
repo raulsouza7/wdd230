@@ -1,70 +1,39 @@
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px; 
-        position: relative; 
-    }
-
-    .logo h1 {
-        text-align: center;
-        margin-top: 10px; 
-    }
-
+@media screen and (max-width: 768px) {
     .hamburger {
         display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px; 
-        z-index: 15; 
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #fff;
     }
 
     .nav-links {
-        position: fixed;
-        background: #333;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 0; 
-        overflow: hidden;
-        transition: width 0.3s ease;
-        z-index: 10; 
+        display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        background-color: #333333;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
     }
 
     .nav-links li a {
-        display: block; 
-        text-decoration: none;
-        padding: 10px 20px;
         color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
         text-align: center;
     }
 
-    .nav-active {
-        width: 250px; 
-        display: flex; 
+    .nav-links li a:hover {
+        background-color: #575757;
     }
 
-    .hero {
-        height: 200px; 
+    .show {
+        display: flex;
     }
-
-    .cards-container {
-        grid-template-columns: 1fr; 
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-logo, 
-    .footer-contact {
-        text-align: center;
-        margin: 10px 0;
-        flex-basis: 100%; 
-    }
-
 }
