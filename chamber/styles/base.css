@@ -80,7 +80,7 @@ nav ul li:nth-child(n+2) {
 }
 
 .hero {
-    background: url('https://orem.org/wp-content/uploads/2023/10/29543278.jpg') no-repeat center center;
+    background: url('https://cdn.vox-cdn.com/thumbor/4vQjcrnYV_CBKWVuARObuOabM3U=/0x0:3000x2000/1820x1024/filters:focal(1260x760:1740x1240):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56899709/GettyImages_670914134.0.jpg') no-repeat center center;
     background-size: cover;
     height: 300px;
     display: flex;

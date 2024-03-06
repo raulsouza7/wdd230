@@ -18,14 +18,10 @@
     }
 
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 0;
         left: 0;
-        background-color: #333;
-        padding-top: 20px;
+        z-index: 10;
     }
 
     .nav-links.nav-active {
@@ -49,3 +45,4 @@
         margin: 10px 0;
     }
 }
+
