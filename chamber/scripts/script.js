@@ -5,4 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
     });
+
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('nav-active')) {
+            navLinks.classList.remove('nav-active');
+        }
+    });
 });
