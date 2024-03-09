@@ -35,15 +35,23 @@
             <button id="dark-mode-toggle" class="dark-mode-button"><span id="dark-mode-icon">☀️</span>Dark Mode</button>
         </div>
     </header>
-    
-    <nav id="navbar"> <nav class="navigation"></nav>
+
+    <nav id="navbar">
+        <nav class="navigation"></nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="#">Survey</a></li>
         </ul>
     </nav>
+
+    <picture>
+        <source srcset="images/templesmall.webp" media="(max-width: 599px)">
+        <source srcset="images/templelarge.webp" media="(min-width: 600px)">
+        <img src="images/templelarge.webp" alt="Campinas Brazil Temple" class="hero-image">
+    </picture>
+    <div class="overlay">Campinas Brazil Temple</div>
 
     <div class="title-container">
         <h1>WDD 230: Web Frontend Development</h1>
@@ -61,7 +69,12 @@
                 <li>Week 02:
                     <a href="https://codepen.io/raulsouza7/pen/zYXxrpJ" target="_blank">Responsive Hamburger Menu</a>
                 </li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>
+                <li>Week 03:
+                    <a href="week03/images/landscape.webp">WebP</a> |
+                    <a href="week03/lazyload.html">Lazy</a> |
+                    <a href="week03/responsive-images.html">srcset</a> |
+                    <a href="week03/bom.html">localStorage</a>
+                </li>
                 <li>Week 04:<a href="#">Link</a></li>
                 <li>Week 05:<a href="#">Link</a></li>
                 <li>Week 06:<a href="#">Link</a></li>
@@ -71,9 +84,16 @@
             <h2>Information</h2>
             <p>Orem, Utah <img src="images/us-flag.png" alt="US Flag" class="small-icon"></p>
             <p><img src="images/sun-icon.png" alt="Sunny" class="small-icon"> 50°F - Clear</p>
-            <p>Page Visits: 01 <span id="visitCount"></span></p>
+            <p>Visit Count: <span id="visitCount"></span></p>
         </section>
     </main>
+
+    <iframe class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.4575002520214!2d-47.003661824689914!3d-22.89649037926227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cfb8bce698f9%3A0xb523779e9aedf7a7!2sCampinas%20Brazil%20Temple!5e0!3m2!1sen!2sus!4v1710018833108!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
     <footer>
         <p id="year">&copy; 2024 Raul Cavalcante de Souza, Orem - Utah</p>
         <p id="lastModified">Last Modification: 02/25/2024 23:25:41</p>
@@ -81,6 +101,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/getDark.js"></script>
     <script src="scripts/getBurger.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        flex-direction: row;
     }
 
     .card {
@@ -64,4 +65,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+
+.google-map {
+    grid-column: 1 / -1;
 }
