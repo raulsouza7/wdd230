@@ -160,7 +160,7 @@ footer {
 }
 
 body.dark-mode {
-    background: #121212;
+    background-color: #555555;
     color: #ffffff;
 }
 
@@ -211,6 +211,7 @@ body.dark-mode .card a:hover {
     position: absolute;
     top: 20px;
     right: 20px;
+    color: white;
 }
 
 .small-icon {
@@ -304,6 +305,11 @@ picture {
     font-weight: bolder;
     font-size: 1rem;
 }
+
+body.dark-mode #visitCount {
+    color: white;
+}
+
 
 .information {
     text-align: center;
