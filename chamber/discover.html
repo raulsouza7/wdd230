@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Raul C. de Souza">
+    <meta name="description"
+        content="Learn more about the Chamber of Commerce and stay updated on our community events, weather forecasts, and featured local businesses.">
+    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raulsouza7.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"
+        content="https://cdn.vox-cdn.com/thumbor/4vQjcrnYV_CBKWVuARObuOabM3U=/0x0:3000x2000/1820x1024/filters:focal(1260x760:1740x1240):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56899709/GettyImages_670914134.0.jpg">
+    <meta property="og:description" content="Welcome to the Chamber of Commerce home page.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 768px)">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/oremlogo.jpg" alt="Chamber of Commerce Logo">
+            <h1>Orem Chamber of Commerce</h1>
+        </div>
+        <button id="menu" class="hamburger">&#9776;</button>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <section class="demographics">
+                <h2>Local Demographics</h2>
+                <p>Population: 52,000</p>
+                <p>Median Age: 35.4 years</p>
+                <p>Median Household Income: $60,000</p>
+            </section>
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Food Truck Fiesta - May 15</li>
+                    <li>Jazz in the Park - June 12</li>
+                    <li>Summer Book Fair - July 23</li>
+                </ul>
+            </section>
+            <section class="attractions">
+                <h2>Local Attractions</h2>
+                <ul>
+                    <li>Maplewood Gardens - A serene escape into nature's beauty.</li>
+                    <li>The Old Mill - Historical tours available daily.</li>
+                    <li>Lakeview Museum - Featuring the 'Wonders of Science' exhibit.</li>
+                    <li>Eagle's Peak Hiking Trail - Experience breathtaking views from the top.</li>
+                    <li>Riverside Amusement Park - Fun for the whole family with rides and games.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="photo-gallery">
+            <img data-src="images/chamber1.webp" alt="Local Attraction 1" class="gallery-image" loading="lazy">
+            <img data-src="images/chamber2.webp" alt="Local Attraction 2" class="gallery-image" loading="lazy">
+            <img data-src="images/chamber3.webp" alt="Local Attraction 3" class="gallery-image" loading="lazy">
+            <img data-src="images/chamber4.webp" alt="Local Attraction 4" class="gallery-image" loading="lazy">
+            <img data-src="images/chamber5.webp" alt="Local Attraction 5" class="gallery-image" loading="lazy">
+            <img data-src="images/chamber6.webp" alt="Local Attraction 6" class="gallery-image" loading="lazy">
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="images/oremlogo.jpg" alt="Chamber of Commerce Logo">
+                <p>Orem Chamber of Commerce</p>
+                <p>385 State Street, Orem, UT 84057</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@oremchamber.com</p>
+                <p>(801) 456-7890</p>
+                <p>📍 Location Map</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Orem Chamber | Raul Souza | WDD 230 | <span id="last-updated">3/2/2024</span></p>
+        </div>
+    </footer>
+    <script src="scripts/burger.js" defer></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/lazyload.js" defer></script>
+
+</html>

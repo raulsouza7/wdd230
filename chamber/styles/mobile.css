@@ -37,3 +37,11 @@
         display: flex;
     }
 }
+
+.discover-main {
+    grid-template-columns: 1fr;
+}
+
+.photo-gallery {
+    grid-template-columns: 1fr;
+}
