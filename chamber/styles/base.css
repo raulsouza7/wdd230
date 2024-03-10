@@ -197,3 +197,27 @@ footer {
 .photo-gallery img:hover {
     transform: scale(1.03);
 }
+
+.container {
+    padding: 0 80px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.logo h1 {
+    font-size: 36px;
+}
+
+main {
+    padding: 40px;
+}
+
+footer {
+    padding: 40px 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
