@@ -221,3 +221,14 @@ footer {
 .nav-links li {
     margin-right: 20px;
 }
+
+figure {
+    text-align: center;
+    margin: 20px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
