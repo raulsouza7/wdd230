@@ -1,0 +1,70 @@
+:root {
+  --zebra-color: #f2f2f2; /* Light grey for zebra striping */
+  --table-background: #ffffff; /* White background for table */
+  --text-color: #333333; /* Dark grey for text */
+  --border-color: #cccccc; /* Light grey for borders */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee; /* Light grey background */
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--table-background);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+thead th {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+tbody th {
+  background-color: #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tbody td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+/* Zebra striping for tbody rows */
+tbody tr:nth-child(odd) {
+  background-color: var(--zebra-color);
+}
+
+/* Zebra striping for tbody rows */
+tbody tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+td:empty:before {
+  content: "❌"; /* Display a cross for empty cells */
+}
+
+td {
+  color: var(--text-color);
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
