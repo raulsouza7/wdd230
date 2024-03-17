@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Raul C. de Souza - WDD 230</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <div class="profile-header">
+            <img src="images/raulbrazil1.jpeg" alt="Raul C. de Souza" class="profile-pic">
+            <span>Raul C. de Souza</span>
+        </div>
+        <div class="menu-buttons">
+            <button id="hamburger-menu" class="hamburger-menu">&#9776;</button>
+            <button id="dark-mode-toggle" class="dark-mode-button"><span id="dark-mode-icon">☀️</span>Dark Mode</button>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Survey</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="surveyForm" action="record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required title="Password must be at least 8 alpha-numeric characters.">
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required title="Please enter a valid @byui.edu email address.">
+
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="ratingValue.textContent = value">
+            <div class="range-labels">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+            </div>
+            <span id="ratingValue">5</span>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p id="year">&copy; 2024 Raul Cavalcante de Souza, Orem - Utah</p>
+        <p id="lastModified">Last Modification: 02/25/2024 23:25:41</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getDark.js"></script>
+    <script src="scripts/getBurger.js"></script>
+    <script src="scripts/visitCounter.js"></script>
+</body>
+</html>
