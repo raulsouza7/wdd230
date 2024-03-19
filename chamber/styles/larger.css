@@ -1,1 +1,13 @@
-/* @media (min-width: 768px) */
+@media screen and (min-width: 600px) {
+    .form-and-benefits-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .membership-benefits {
+        flex: 1;
+    }
+    form {
+        flex: 1;
+    }
+}

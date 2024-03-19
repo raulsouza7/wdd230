@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join the Chamber of Commerce</title>
     <meta name="author" content="Raul C. de Souza">
-    <meta name="description" content="Chamber Join Page">
+    <meta name="description" content="Apply to join the Chamber of Commerce">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 600px)">
@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="form-and-benefits-container">
         <form action="thankyou.html" method="get">
             <div class="form-group">
                 <label for="firstName">First Name:</label>
@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Title/Position:</label>
-                <input type="text" id="title" name="title" pattern="[A-Za-z-\s]{7,}" required>
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s-]{7,}" title="Title must be at least 7 characters long and contain only letters, hyphens, and spaces." required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -73,9 +73,16 @@
                 <input type="submit" value="Submit Application">
             </div>
         </form>
-        <script>
-            document.getElementById('timestamp').value = new Date().toISOString();
-        </script>
+
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li><strong>NP Membership:</strong> Access to our monthly newsletter, free entry to networking events.</li>
+                <li><strong>Bronze Membership:</strong> All NP benefits, plus your business listed in our directory.</li>
+                <li><strong>Silver Membership:</strong> All Bronze benefits, plus free business spotlight feature on our homepage once a year.</li>
+                <li><strong>Gold Membership:</strong> All Silver benefits, plus exclusive access to premium events and training sessions.</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
