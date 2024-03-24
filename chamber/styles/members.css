@@ -8,13 +8,13 @@
     margin: 0 0.5rem;
     border: none;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #333333;
     color: white;
     border-radius: 5px;
 }
 
 .menu button:hover {
-    background-color: #45a049;
+    background-color: #1E90FF;
 }
 
 .card {
@@ -36,7 +36,7 @@
 }
 
 .card a {
-    color: #007bff;
+    color: #000000; /* Adjusted link color */
     text-decoration: none;
 }
 
