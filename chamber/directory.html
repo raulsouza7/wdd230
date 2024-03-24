@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce - Directory</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Raul C. de Souza">
+    <meta name="description" content="Browse the directory of Chamber of Commerce members.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/members.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/oremlogo.jpg" alt="Chamber of Commerce Logo">
+            <h1>Orem Chamber of Commerce</h1>
+        </div>
+        <button id="menu" class="hamburger">&#9776;</button>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+        <hr>
+        <article id="members-display" class="grid">
+            <!-- Member cards or list items will be dynamically generated here -->
+        </article>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="images/oremlogo.jpg" alt="Chamber of Commerce Logo">
+                <p>Orem Chamber of Commerce</p>
+                <p>385 State Street, Orem, UT 84057</p>
+            </div>
+            <div class="footer-contact">
+                <p>info@oremchamber.com</p>
+                <p>(801) 456-7890</p>
+                <p>📍 Location Map</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Orem Chamber | Raul Souza | WDD 230 | <span id="last-updated">3/2/2024</span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/members.js"></script>
+
+    <script>
+        // JavaScript for toggling between grid and list view
+        const gridButton = document.querySelector("#grid");
+        const listButton = document.querySelector("#list");
+        const display = document.querySelector("article");
+
+        gridButton.addEventListener("click", () => {
+            display.classList.add("grid");
+            display.classList.remove("list");
+        });
+
+        listButton.addEventListener("click", () => {
+            display.classList.add("list");
+            display.classList.remove("grid");
+        });
+    </script>
+    
+</body>
+
+</html>

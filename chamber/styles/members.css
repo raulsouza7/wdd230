@@ -1,0 +1,74 @@
+.menu {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.list .card {
+    display: block;
+}
+
+.list .card p {
+    font-size: 0.9rem;
+}
+
+.grid .card {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+    .grid .card {
+        width: calc(50% - 20px);
+    }
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 120px;
+}

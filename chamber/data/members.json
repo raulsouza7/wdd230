@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "ABC Inc.",
+            "address": "123 Main Street, Anytown, USA",
+            "phone": "(555) 123-4567",
+            "website": "https://www.abcinc.com",
+            "image": "images/abc_logo.webp",
+            "membership_level": "Gold",
+            "description": "ABC Inc. is a leading provider of innovative solutions in the technology sector."
+        },
+        {
+            "name": "Smith & Co. Law Firm",
+            "address": "456 Elm Street, Anytown, USA",
+            "phone": "(555) 987-6543",
+            "website": "https://www.smithlaw.com",
+            "image": "images/smith_logo.jpg",
+            "membership_level": "Silver",
+            "description": "Smith & Co. Law Firm specializes in providing legal services for businesses and individuals."
+        },
+        {
+            "name": "Green Landscaping Services",
+            "address": "789 Oak Street, Anytown, USA",
+            "phone": "(555) 543-2109",
+            "website": "https://www.greenlandscaping.com",
+            "image": "images/green_logo.jpg",
+            "membership_level": "Bronze",
+            "description": "Green Landscaping Services offers professional landscaping solutions for residential and commercial properties."
+        },
+        {
+            "name": "Tech Innovation",
+            "address": "321 Pine Street, Anytown, USA",
+            "phone": "(555) 890-1234",
+            "website": "https://www.techinnovation.com",
+            "image": "images/tech_logo.jpg",
+            "membership_level": "Gold",
+            "description": "Tech Innovate specializes in cutting-edge technology solutions for businesses of all sizes."
+        },
+        {
+            "name": "Gourmet Catering Co.",
+            "address": "654 Cedar Street, Anytown, USA",
+            "phone": "(555) 234-5678",
+            "website": "https://www.gourmetcatering.com",
+            "image": "images/gourmet_logo.webp",
+            "membership_level": "Platinum",
+            "description": "Gourmet Catering Co. provides high-quality catering services for events and special occasions."
+        },
+        {
+            "name": "Blue Sky Airlines",
+            "address": "987 Walnut Street, Anytown, USA",
+            "phone": "(555) 678-9012",
+            "website": "https://www.blueskyairlines.com",
+            "image": "images/bluesky_logo.png",
+            "membership_level": "Silver",
+            "description": "Blue Sky Airlines offers domestic and international flights with a focus on customer satisfaction and safety."
+        },
+        {
+            "name": "Fresh Start Fitness",
+            "address": "210 Maple Street, Anytown, USA",
+            "phone": "(555) 345-6789",
+            "website": "https://www.freshstartfitness.com",
+            "image": "images/fresh_logo.jpg",
+            "membership_level": "Bronze",
+            "description": "Fresh Start Fitness provides personalized fitness programs and training services for individuals and groups."
+        }
+    ]
+}
