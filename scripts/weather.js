@@ -1,5 +1,3 @@
-// weather.js
-
 // Define the API key and base URL
 const apiKey = '8426e72631d65163b4f80e5e6bcd41fa';
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';

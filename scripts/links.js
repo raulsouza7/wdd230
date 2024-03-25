@@ -1,50 +1,53 @@
-// Define the base URL for your GitHub Pages repository
-const baseURL = "https://raulsouza7.github.io/wdd230/";
+document.addEventListener('DOMContentLoaded', function () {
+    const baseURL = "https://raulsouza7.github.io/wdd230/"; // Use your project's base URL
+    const linksURL = `${baseURL}data/links.json`;
 
-// Define the URL for the JSON data file
-const linksURL = `${baseURL}data/links.json`;
-
-// Function to fetch and display dynamic activity links
-async function getLinks() {
-    try {
-        // Fetch data from the JSON file
-        const response = await fetch(linksURL);
-        if (response.ok) {
-            // Convert response to JSON
+    async function getLinks() {
+        try {
+            const response = await fetch(linksURL);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const data = await response.json();
-            // Display activity links
             displayLinks(data.weeks);
-        } else {
-            throw Error(await response.text());
+        } catch (error) {
+            console.error('Fetch error:', error);
         }
-    } catch (error) {
-        console.log(error);
     }
-}
 
-// Function to dynamically build and display activity links in the learning activities section
-function displayLinks(weeks) {
-    const learningActivitiesContainer = document.getElementById('learning-activities-container');
-    learningActivitiesContainer.innerHTML = ''; // Clear the existing content in the learning activities container
+    function displayLinks(weeks) {
+        const activitiesSection = document.querySelector('.left-card ul');
+        activitiesSection.innerHTML = ''; // Clear existing content
 
-    weeks.forEach(week => {
-        const weekTitle = document.createElement('h3');
-        weekTitle.textContent = week.week;
-        learningActivitiesContainer.appendChild(weekTitle);
+        weeks.forEach(week => {
+            const weekItem = document.createElement('li');
+            weekItem.innerHTML = `${week.week}: `; // Set the week title
 
-        const weekLinks = document.createElement('ul');
-        week.links.forEach(link => {
-            const listItem = document.createElement('li');
-            const anchor = document.createElement('a');
-            anchor.href = `${baseURL}${link.url}`;
-            anchor.textContent = link.title;
-            listItem.appendChild(anchor);
-            weekLinks.appendChild(listItem);
+            week.links.forEach((link, index) => {
+                // Handle link creation
+                const anchor = document.createElement('a');
+                anchor.textContent = link.title; // Set link title
+
+                // Determine if the URL is absolute or relative
+                anchor.href = link.url.startsWith('http') ? link.url : `${baseURL}${link.url}`;
+
+                // Open external links in a new tab, adding rel for security
+                if (link.url.startsWith('http')) {
+                    anchor.target = '_blank';
+                    anchor.rel = 'noopener noreferrer';
+                }
+
+                weekItem.appendChild(anchor); // Append the anchor to the list item
+
+                // Append separators between links, but not after the last link
+                if (index < week.links.length - 1) {
+                    weekItem.appendChild(document.createTextNode(' | '));
+                }
+            });
+
+            activitiesSection.appendChild(weekItem); // Add the list item to the UL
         });
+    }
 
-        learningActivitiesContainer.appendChild(weekLinks);
-    });
-}
-
-// Call the function to fetch and display activity links
-getLinks();
+    getLinks(); // Fetch and display links
+});

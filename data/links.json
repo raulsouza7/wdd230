@@ -1,99 +1,102 @@
 {
     "weeks": [
-      {
-        "week": "Week 1",
-        "links": [
-          {
-            "url": "week01/holygrail.html",
-            "title": "HG Layout"
-          },
-          {
-            "url": "week01/media-query.html",
-            "title": "mQueries"
-          }
-        ]
-      },
-      {
-        "week": "Week 2",
-        "links": [
-          {
-            "url": "week02/responsive-hamburger-menu.html",
-            "title": "Responsive Hamburger Menu"
-          }
-        ]
-      },
-      {
-        "week": "Week 3",
-        "links": [
-          {
-            "url": "week03/webp.html",
-            "title": "WebP"
-          },
-          {
-            "url": "week03/lazyload.html",
-            "title": "Lazy"
-          },
-          {
-            "url": "week03/responsive-images.html",
-            "title": "srcset"
-          },
-          {
-            "url": "week03/bom.html",
-            "title": "localStorage"
-          }
-        ]
-      },
-      {
-        "week": "Week 4",
-        "links": [
-          {
-            "url": "week04/pseudo.html",
-            "title": "Pseudo"
-          },
-          {
-            "url": "week04/combinator.html",
-            "title": "Combinator"
-          },
-          {
-            "url": "week04/tablebuild.html",
-            "title": "Table"
-          },
-          {
-            "url": "week04/Form-start/index.html",
-            "title": "Form"
-          }
-        ]
-      },
-      {
-        "week": "Week 5",
-        "links": [
-          {
-            "url": "week05/pseudo2.html",
-            "title": "Pseudo 2"
-          },
-          {
-            "url": "week05/new-ward-members.json",
-            "title": "JSON"
-          },
-          {
-            "url": "week05/prophets.html",
-            "title": "Fetch API"
-          },
-          {
-            "url": "week05/weather.html",
-            "title": "3rd Party API"
-          }
-        ]
-      },
-      {
-        "week": "Week 6",
-        "links": [
-          {
-            "url": "#",
-            "title": "Link"
-          }
-        ]
-      }
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "index.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/raulsouza7/pen/eYXqdOQ",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://codepen.io/raulsouza7/pen/zYXxrpJ",
+                    "title": "Responsive Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Browser Object Model"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/raulsouza7/pen/xxeRbqv",
+                    "title": "Pseudo Classes and Elements"
+                },
+                {
+                    "url": "week04/images/combinatorexercises.jpg",
+                    "title": "Combinator Exercises"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Building"
+                },
+                {
+                    "url": "week04/Form-start/index.html",
+                    "title": "Form Start"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/raulsouza7/full/oNOWaMj",
+                    "title": "Pseudo 2"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "New Ward Members JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "3rd Party API"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "#",
+                    "title": "Future Content"
+                }
+            ]
+        }
     ]
-  }
-  
+}
