@@ -4,8 +4,8 @@
             "week": "Week 1",
             "links": [
                 {
-                    "url": "index.html",
-                    "title": "Layout"
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail"
                 },
                 {
                     "url": "week01/media-query.html",
